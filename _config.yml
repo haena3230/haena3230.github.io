@@ -1,13 +1,9 @@
-
-title: Catbook #Your awesome title
-email: #youremail@domain.com
-description: > # this means to ignore newlines until "baseurl"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Haena Log
+email: gosk0912@naver.com
+description: Junior Developer from Dankook University
 
 baseurl: # the subpath of the site
-url: http://starry99.github.io/catbook # the base hostname & protocol for your site
+url: https://haena3230.github.io/ # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
 timezone:
@@ -15,13 +11,13 @@ timezone:
 favicon: /assets/img/favicon.ico
 
 google_analytics: #UA—XXXXXXXX-X
-disqus_shortname: #disqus shortname
+disqus_shortname: Haena
 
 user:
-  name: Catbook
-  pic: /assets/img/cat.jpg
-  picAlt: "catbook"
-  job: a category-centric theme
+  name: Haena
+  pic: /assets/img/haena.jfif
+  picAlt: "haena"
+  job: Junior Developer
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
@@ -35,13 +31,13 @@ defaults:
       type: posts
     values:
       layout: post
-      comment: true   
+      comment: true
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown 
+markdown: kramdown
 
 # Filtering Content
 show_drafts: null
 limit_posts: 0
-future:      false
+future: false
 unpublished: false
