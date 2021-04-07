@@ -694,14 +694,8 @@ img {
   text-align: center;
   color: var(--footer_font);
 
-  input {
-    vertical-align: middle;
-  }
-  input.mail-btn {
-    width: 32px;
-    height: 32px;
-  }
-  input.git-btn {
+  button.img {
+    margin: 10px;
     width: 32px;
     height: 32px;
   }
