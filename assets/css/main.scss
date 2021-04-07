@@ -693,16 +693,14 @@ img {
   height: 2.4rem;
   text-align: center;
   color: var(--footer_font);
-}
-.mail-btn {
-  margin: 10px;
-  width: 32px;
-  height: 32px;
-}
-
-.git-btn {
-  margin: 10px;
-  width: 32px;
-  height: 32px;
-  background: url("/assets/img/icons8-github-200.png") no-repeat;
+  .mail-btn {
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+  }
+  .git-btn {
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+  }
 }
