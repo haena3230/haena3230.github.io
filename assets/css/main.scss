@@ -694,9 +694,17 @@ img {
   text-align: center;
   color: var(--footer_font);
 
-  button.img {
+  input {
     margin: 10px;
     width: 32px;
     height: 32px;
+  }
+
+  input.mail-btn {
+    background: url("/assets/img/icons8-mail-contact-96.png") no-repeat;
+  }
+
+  input.git-btn {
+    background: url("/assets/img/icons8-github-200.png") no-repeat;
   }
 }
