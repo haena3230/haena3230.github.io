@@ -1,4 +1,8 @@
-[원본](https://www.notion.so/haena3230/GraphQL-Client-9dab0ee6db3c465284f639bed3619007) 포스트를 블로그로 이동했습니다.
+---
+title: GraphQL Client
+categories: [dev]
+comments: true
+---
 
 # GraphQL Client
 

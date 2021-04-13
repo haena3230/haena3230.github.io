@@ -4,17 +4,17 @@ categories: [concept]
 comments: true
 ---
 
-[원본](https://www.notion.so/haena3230/javascript-es6-0db9e531235343f78eadf1518f4d3f1b) 포스트를 블로그로 이동했습니다.
+# Javascript es6
 
-ECMAScript는 자바스크립트의 표준이며 현재도 계속 ECMA International 표준화 기구에 의해 버전이 업데이트 되고 있다. 그리고 ECMAScript2015를 ES6라고 하며, ES6 이후 버전을 통칭하여 **"ES6+"** 라고 한다.
+ECMAScript는 자바스크립트의 표준이며 현재도 계속 ECMA International 표준화 기구에 의해 버전이 업데이트 되고 있다. 그리고 ECMAScript2015를 ES6라고 하며, ES6 이후 버전을 통칭하여 `"ES6+"` 라고 한다.
 
 ## 변수
 
 ### 선언 및 할당
 
-- 기본적으로는 **const**를 사용한다.
-- 재할당이 필요한 경우에만 **let**을 사용한다.
-- **var**는 ES2015에서는 쓰지 않는다.
+- 기본적으로는 `const`를 사용한다.
+- 재할당이 필요한 경우에만 `let`을 사용한다.
+- `var`는 ES2015에서는 쓰지 않는다.
 
 ```jsx
 //ES5
@@ -40,7 +40,7 @@ console.log(C); //5
 
 ### Scope
 
-- **함수 레벨 스코프(Function-level scope)**
+- `함수 레벨 스코프(Function-level scope)`
 
 함수 내에서 선언된 변수는 함수 내에서만 유효하며 함수 외부에서는 참조할 수 없다. 즉, 함수 내부에서 선언한 변수는 지역 변수이며 함수 외부에서 선언한 변수는 모두 전역 변수이다.
 
@@ -55,7 +55,7 @@ console.log(a); // 10
 console.log(b); // "b" is not defined
 ```
 
-- **블록 레벨 스코프(Block-level scope)**
+- `블록 레벨 스코프(Block-level scope)`
 
 코드 블록 내에서 선언된 변수는 코드 블록 내에서만 유효하며 코드 블록 외부에서는 참조할 수 없다. 블록의 범위는 중괄호 이며, 함수 스코프 대신 블록 스코프를 사용함으로써 호이스팅 같은 문제도 해결되고, 코드 관리도 수월해졌다.
 
@@ -77,9 +77,9 @@ console.log(y); //ReferenceError: y is not defined
 ### Hoisting
 
 - 자바스크립트는 모든 선언문(var, let, const, function, function\*, class)이 선언되기 이전에 참조 가능하다.
-- **선언 단계(Declaration phase)** - 변수 객체(Variable Object)에 변수를 등록한다. 이 변수 객체는 스코프가 참조하는 대상이 된다
-- **초기화 단계(Initialization phase)** - 변수 객체(Variable Object)에 등록된 변수를 메모리에 할당한다. 이 단계에서 변수는 undefined로 초기화된다.
-- **할당 단계(Assignment phase)** - undefined로 초기화된 변수에 실제값을 할당한다.
+- `선언 단계(Declaration phase)` - 변수 객체(Variable Object)에 변수를 등록한다. 이 변수 객체는 스코프가 참조하는 대상이 된다
+- `초기화 단계(Initialization phase)` - 변수 객체(Variable Object)에 등록된 변수를 메모리에 할당한다. 이 단계에서 변수는 undefined로 초기화된다.
+- `할당 단계(Assignment phase)` - undefined로 초기화된 변수에 실제값을 할당한다.
 
 ```jsx
 //ES5
@@ -169,7 +169,7 @@ console.log(name, realAge);
 
 ## Spread Operators
 
-- 배열과 같은 객체들을 합치기 위해 u**npack을 도와주는것**
+- 배열과 같은 객체들을 합치기 위해 `unpack을 도와주는것`
 
 ```jsx
 const beforeNumber = [1, 2, 3, 4];
@@ -263,11 +263,11 @@ foo.getName();
 
 ### map
 
-- 함수가 모든 배열을 돌며, 함수의 결과 값들을 저장해서 **새로운 배열** 로 만드는 함수 이다.
+- 함수가 모든 배열을 돌며, 함수의 결과 값들을 저장해서 `새로운 배열` 로 만드는 함수 이다.
 
 ### filter
 
-- map과 유사하지만, **참(true)인 값만** 새로운 배열로 작성한다.
+- map과 유사하지만, `참(true)인 값만` 새로운 배열로 작성한다.
 
 ### forEach
 

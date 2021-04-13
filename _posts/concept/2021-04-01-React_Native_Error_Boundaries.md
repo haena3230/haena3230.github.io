@@ -1,8 +1,14 @@
+---
+title: React Native Error Boundaries
+categories: [concept]
+comments: true
+---
+
 # React Native Error Boundaries
 
-앱을 실행하고 동작할 때 사용자에게 적절한 **에러 화면**을 보여주고, 적절하게 **처리 방법**을 유도하지 않는다면, 사용자가 앱에대한 신뢰성을 잃고 이탈 할 가능성이 크다. 따라서 적절한 처리 화면과 처리 방법의 로직을 구현하는 것이 중요하다. 적절한 에러 처리를 위해 **React** 의 **생명주기**를 참고할 수 있다.
+앱을 실행하고 동작할 때 사용자에게 적절한 `**에러 화면**`을 보여주고, 적절하게 `**처리 방법**`을 유도하지 않는다면, 사용자가 앱에대한 신뢰성을 잃고 이탈 할 가능성이 크다. 따라서 적절한 처리 화면과 처리 방법의 로직을 구현하는 것이 중요하다. 적절한 에러 처리를 위해 `**React**` 의 `**생명주기**`를 참고할 수 있다.
 
-### React Lifecycle Note
+React Lifecycle Note
 
 [React 생명주기](https://haena3230.github.io/2021-01/React_Lifecycle)
 
@@ -30,7 +36,7 @@
 
 ![https://reactjs-kr.firebaseapp.com/static/error-boundaries-stack-trace-f1276837b03821b43358d44c14072945-acf85.png](https://reactjs-kr.firebaseapp.com/static/error-boundaries-stack-trace-f1276837b03821b43358d44c14072945-acf85.png)
 
-만약 Create React App을 사용하지 않는다면 `Babel 설정`에 수동으로 [이 플러그인](https://www.npmjs.com/package/babel-plugin-transform-react-jsx-source)을 추가할 수 있다. 이 기능은 `개발 모드`를 위해 구현하였으며 **프로덕션 모드에서는 반드시 비활성화 하여야** 한다.
+만약 Create React App을 사용하지 않는다면 `Babel 설정`에 수동으로 [이 플러그인](https://www.npmjs.com/package/babel-plugin-transform-react-jsx-source)을 추가할 수 있다. 이 기능은 `개발 모드`를 위해 구현하였으며 `**프로덕션 모드에서는 반드시 비활성화 하여야**` 한다.
 
 # try catch
 

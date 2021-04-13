@@ -4,25 +4,25 @@ categories: [concept]
 comments: true
 ---
 
-[원본](https://www.notion.so/haena3230/React-3d15818e86ff4821b0539757e2459b0e) 포스트를 블로그로 이동했습니다.
+# React 생명주기
 
-## React 생명주기
-
-모든 **컴포넌트**는 다음과 같이 세 가지 단계를 거칩니다.
+**모든 `컴포넌트`는 다음과 같이 세 가지 단계를 거친다.**
 
 - 초기화단계
 - 업데이트단계
 - 소멸단계
 
-각 단계에서 몇 개의 메서드들이 정해진 순서대로 되며, 각 단계 속에서 호출되는 메서드를 **생명주기** 메서드라고 부릅니다.
+각 단계에서 몇 개의 메서드들이 정해진 순서대로 되며, 각 단계 속에서 호출되는 메서드를 **생명주기** 메서드라고 부른다.
 
-- **초기화단계**는 최초에 컴포넌트 **객체가 생성될 때** 한 번 수행되는 과정이다.
-- **업데이트단계**는 컴포넌트가 마운트된 이 후, 컴포넌트의 속성값(props), 상태값(state)가 **변경**되면 업데이트 단계가 수행한다.
-- **소멸단계**는 말 그대로 **소멸**될 때 수행되는 과정이다.
+- **`초기화단계`**는 최초에 컴포넌트 `객체가 생성될 때` 한 번 수행되는 과정이다.
+- **`업데이트단계`**는 컴포넌트가 마운트된 이 후, 컴포넌트의 속성값(props), 상태값(state)가 `변경`되면 업데이트 단계가 수행한다.
+- **`소멸단계`**는 말 그대로 `소멸`될 때 수행되는 과정이다.
 
 ## 생명주기 메서드
 
 UI데이터가 변경되면 자동으로 컴포넌트가 업데이트되며 동적으로 화면을 그려줍니다. 제대로 된 기능을 수행하려면 이런 자동으로 업데이트되는 과정에 끼어들어 API를 호출하기도 하고 데이터를 가공하기도 해야 합니다. 따라서 생명주기의 각 단계별로 필요한 순간에 필요한 작업들을 끼워넣을 수 있는 메서드들이 존재합니다.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/156dad0c-7a6d-422f-a83e-e8a927e14d6c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/156dad0c-7a6d-422f-a83e-e8a927e14d6c/Untitled.png)
 
 생명주기 다이어그램
 
@@ -53,7 +53,7 @@ UI데이터가 변경되면 자동으로 컴포넌트가 업데이트되며 동�
 
 ### 렌더링 시 예외 발생
 
-앞의 세 단계와 별개로 렌더링 시에 **예외**가 발생하면 다음 메서드가 호출됩니다.
+앞의 세 단계와 별개로 렌더링 시에 `예외`가 발생하면 다음 메서드가 호출됩니다.
 
 - static getDerivedStateFromError()
 - componentDidCatch()
@@ -125,9 +125,9 @@ function SampleComponent({ title }) {
 
 componentDidMount 메서드는 render 메서드의 첫 번째 반환 값이 실제 돔에 반영된 직후 호출됩니다. 따라서 render 메서드에서 반환한 리액트 요소가 돔에 반영되어야 알 수 있는 값을 얻을 수 있습니다. 예를 들면 CSS에서 width: 100%와 같은 퍼센트 값들이 실제 돔에서 몇 픽셀로 적용되었는지와 같은 값들을 받아올 수 있습니다.
 
-componentDidMount는 **API 호출을 통해 데이터를 가져올 때 적합**합니다. 왜냐하면 호출한 데이터를 state에 적용하기 위해서는 setState 메서드를 사용해야 하는데 componentDidMount 메서드가 setState 메서드가 동작하는 가장 빠른 시점이기 때문입니다. (컴포넌트가 마운트 된 이후에만 동작하므로)
+componentDidMount는 `API 호출을 통해 데이터를 가져올 때 적합`합니다. 왜냐하면 호출한 데이터를 state에 적용하기 위해서는 setState 메서드를 사용해야 하는데 componentDidMount 메서드가 setState 메서드가 동작하는 가장 빠른 시점이기 때문입니다. (컴포넌트가 마운트 된 이후에만 동작하므로)
 
-성능이 민감한 애플리케이션이라면 constructor에서 API를 호출하고 프로미스 객체를 이용해 componentDidMount에서 setState로 렌더링 하여 좀 더 빠른 렌더링을 할 수 있지만, 코드가 다소 복잡해지는 단점이 있기 때문에 되도록 componentDidMount 메서드에서 API를 호출하는 것이 좋습니다.
+> 성능이 민감한 애플리케이션이라면 constructor에서 API를 호출하고 프로미스 객체를 이용해 componentDidMount에서 setState로 렌더링 하여 좀 더 빠른 렌더링을 할 수 있지만, 코드가 다소 복잡해지는 단점이 있기 때문에 되도록 componentDidMount 메서드에서 API를 호출하는 것이 좋습니다.
 
 ---
 
@@ -135,7 +135,7 @@ componentDidMount는 **API 호출을 통해 데이터를 가져올 때 적합**
 
 > shouldComponentUpdate(nextProps, nextState)
 
-shouldComponentUpdate 메서드는 **성능 최적화**를 위해 존재합니다. 이 메서드는 bool 타입을 반환하는데, 만약 true를 반환하면 render 메서드가 호출되고 false를 반환하면 업데이트 단계는 여기서 멈추게 됩니다. 따라서 개발자는 속성 값과 상탯값을 기반으로 해당 메서드를 작성하게 됩니다. 즉 shouldComponentUpdate 메서드에서 true를 반환하면 render 메서드가 호출되고 가상 돔 수준에서 변경된 내용이 있는지 확인하게 됩니다. 때문에 shouldComponentUpdate에서 변수의 비교를 통해 변경된 내용이 없다면 업데이트 라이프사이클을 끝냄으로써 불필요한 연산을 줄일 수 있습니다.
+shouldComponentUpdate 메서드는 `성능 최적화`를 위해 존재합니다. 이 메서드는 bool 타입을 반환하는데, 만약 true를 반환하면 render 메서드가 호출되고 false를 반환하면 업데이트 단계는 여기서 멈추게 됩니다. 따라서 개발자는 속성 값과 상탯값을 기반으로 해당 메서드를 작성하게 됩니다. 즉 shouldComponentUpdate 메서드에서 true를 반환하면 render 메서드가 호출되고 가상 돔 수준에서 변경된 내용이 있는지 확인하게 됩니다. 때문에 shouldComponentUpdate에서 변수의 비교를 통해 변경된 내용이 없다면 업데이트 라이프사이클을 끝냄으로써 불필요한 연산을 줄일 수 있습니다.
 
 ```jsx
 class SampleComponent extends React.Component {
@@ -180,4 +180,4 @@ componentWillUnmount 메서드는 소멸 단계에서 호출되는 유일한 메
 
 getDerivedStateFromError / componentDidCatch 메서드는 생명 주기 메서드에서 발생한 예외를 처리하는 메서드입니다. 생명 주기 메서드에서 예외가 발생하면 getDerivedStateFromError / componentDidCatch를 구현한 가장 가까운 부모 컴포넌트를 찾게 됩니다.
 
-error 매개변수는 예외가 발생할 때 전달되는 에러 객체이고, info 매개변수는 어떤 컴포넌트에서 에러가 발생했는지를 알려주게 됩니다.
+error 매개변수는 예외가 발생할 때 전달되는 에러 객체이고, info 매개변수는 어떤 컴포넌트에서 에러가 발생했는지를 아려주게 됩니다.
