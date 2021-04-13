@@ -689,20 +689,15 @@ img {
    ========================================================================== */
 
 .footer {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2.4rem;
+  justify-content: center;
   align-items: center;
-  color: var(--footer_font);
+  margin: 10px;
   .mail-btn {
     margin: 10px;
     width: 80px;
-    height: 80px;
   }
   .git-btn {
     margin: 10px;
     width: 100px;
-    height: 100px;
   }
 }
