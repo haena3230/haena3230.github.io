@@ -173,6 +173,6 @@ handleEmail = () => {
 
 ### 사용 예제
 
-[https://user-images.githubusercontent.com/57908055/121170036-a63fa700-c88f-11eb-8a95-87ea33b58119.mp4](https://user-images.githubusercontent.com/57908055/121170036-a63fa700-c88f-11eb-8a95-87ea33b58119.mp4)
+[ReactNative_MAil_ex](https://youtu.be/aHD2YGEiw-s)
 
-### [공식 문서](<[https://www.npmjs.com/package/react-native-mail](https://www.npmjs.com/package/react-native-mail)>)
+### [공식 문서](https://www.npmjs.com/package/react-native-mail](https://www.npmjs.com/package/react-native-mail)
