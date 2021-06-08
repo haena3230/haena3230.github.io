@@ -1,6 +1,6 @@
 ---
 title: Typescript : Javascript [A-Z]
-categories: [Javascript$Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Typescript - Cannot redeclare block-scoped variable 'name'
-categories: [Javascript&Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 

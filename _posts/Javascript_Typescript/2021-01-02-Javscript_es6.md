@@ -1,6 +1,6 @@
 ---
 title: Javascript es6
-categories: [Javascript$Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Typescript : Javascript For문
-categories: [Javascript$Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 

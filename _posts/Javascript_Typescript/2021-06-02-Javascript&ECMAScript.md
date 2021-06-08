@@ -1,6 +1,6 @@
 ---
 title: Typescript : Javascript와 ECMAScript의 차이점
-categories: [Javascript$Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 

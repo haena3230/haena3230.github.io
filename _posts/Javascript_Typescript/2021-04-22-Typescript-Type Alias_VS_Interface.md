@@ -1,6 +1,6 @@
 ---
 title: Typescript : Type Alias VS Interface
-categories: [Javascript$Typescript]
+categories: [Javascript_Typescript]
 comments: true
 ---
 
