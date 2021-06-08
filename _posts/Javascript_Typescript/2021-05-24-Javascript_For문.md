@@ -4,6 +4,8 @@ categories: [Javascript_Typescript]
 comments: true
 ---
 
+# Javascript 반복문
+
 # foreach 반복문
 
 `foreach` 반복문은 오직 Array 객체에서만 사용가능한 메서드입니다.(ES6부터는 Map, Set 등에서도 지원됩니다) 배열의 요소들을 반복하여 작업을 수행할 수 있습니다. `foreach` 구문의 인자로 callback 함수를 등록할 수 있고, 배열의 각 요소들이 반복될 때 이 callback 함수가 호출됩니다. callback 함수에서 배열 요소의 인덱스와 값에 접근할 수 있습니다.

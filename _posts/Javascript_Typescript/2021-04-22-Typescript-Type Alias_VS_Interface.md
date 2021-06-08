@@ -4,6 +4,8 @@ categories: [Javascript_Typescript]
 comments: true
 ---
 
+# Typescript의 Type Alias vs interface
+
 `typescript`를 통해 프로젝트를 진행하면서, `Type Alias` 와 `interface` 를 활용하는 방법이 헷갈려서 정리 해 두고자 한다.
 
 ## Typescript 팀의 의도

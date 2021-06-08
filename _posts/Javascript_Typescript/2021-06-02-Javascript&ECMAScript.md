@@ -4,6 +4,8 @@ categories: [Javascript_Typescript]
 comments: true
 ---
 
+# ECMA script
+
 👀 들어가기 전에 알아보기
 
 ## 컴파일러
