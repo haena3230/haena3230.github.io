@@ -1,5 +1,5 @@
 ---
-title: Typescript : Javascript [A-Z]
+title: Javascript [A-Z]
 categories: [Javascript_Typescript]
 comments: true
 ---

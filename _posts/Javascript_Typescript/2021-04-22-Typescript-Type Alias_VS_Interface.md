@@ -1,5 +1,5 @@
 ---
-title: Typescript : Type Alias VS Interface
+title: Type Alias VS Interface
 categories: [Javascript_Typescript]
 comments: true
 ---

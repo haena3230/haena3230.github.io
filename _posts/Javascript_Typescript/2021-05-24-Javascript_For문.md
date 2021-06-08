@@ -1,5 +1,5 @@
 ---
-title: Typescript : Javascript For문
+title: Javascript For문
 categories: [Javascript_Typescript]
 comments: true
 ---
