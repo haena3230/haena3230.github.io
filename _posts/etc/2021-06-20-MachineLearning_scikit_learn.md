@@ -37,7 +37,7 @@ conda install scikit-learn
 
 scikit learn을 사용할 때, 자신이 하고 싶은 분석(분류/회귀/클러스터링 등)에 대해 선택할 때, 다음의 그림을 참고하여 적합한 모델을 선택할 수 있습니다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a96eb755-29c7-483a-8c5f-9f32370c77d4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a96eb755-29c7-483a-8c5f-9f32370c77d4/Untitled.png)
+[![cheatsheet](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a96eb755-29c7-483a-8c5f-9f32370c77d4/Untitled.png)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a96eb755-29c7-483a-8c5f-9f32370c77d4/Untitled.png)
 
 (출처 : [https://scikit-learn.org/stable/tutorial/machine_learning_map/](https://scikit-learn.org/stable/tutorial/machine_learning_map/))
 
@@ -85,8 +85,8 @@ scikit learn을 사용할 때, 자신이 하고 싶은 분석(분류/회귀/클�
 나누는 방법은 scikit-learn에서 친절하게 제공합니다.
 
 ```python
-**from** sklearn.model_selection **import** train_test_split
-training_data, validation_data , training_labels, validation_labels = train_test_split**(**x, y, train_size=0.8, test_size=0.2**)**
+from sklearn.model_selection import train_test_split
+training_data, validation_data , training_labels, validation_labels = train_test_split(x, y, train_size=0.8, test_size=0.2)
 ```
 
 ### (2) **교차 검증 (N-Fold Cross-Validation)**
@@ -95,7 +95,7 @@ training_data, validation_data , training_labels, validation_labels = train_test
 
 예를 들어, 10번 교차 검증을 한다고 하면 아래와 같은 그림으로 표현할 수 있습니다.
 
-![http://hleecaster.com/wp-content/uploads/2019/12/10fold.jpg](http://hleecaster.com/wp-content/uploads/2019/12/10fold.jpg)
+[![nfold](http://hleecaster.com/wp-content/uploads/2019/12/10fold.jpg)](http://hleecaster.com/wp-content/uploads/2019/12/10fold.jpg)
 
 [출처](<[http://hleecaster.com/ml-training-validation-test-set/](http://hleecaster.com/ml-training-validation-test-set/)>)
 
@@ -104,7 +104,7 @@ training_data, validation_data , training_labels, validation_labels = train_test
 그리고 이걸 일일이 하기 귀찮으니 scikit-learn에서는 아예 이런 기능을 제공하고 있기도 합니다.
 
 ```python
-**from** sklearn.model_selection **import** KFold
+from sklearn.model_selection import KFold
 ```
 
 ### (3) **모델 성능 개선 및 평가 세트(Test Set)**
@@ -122,14 +122,14 @@ training_data, validation_data , training_labels, validation_labels = train_test
 **Import and create the model**
 
 ```python
-**from** sklearn.linear_model **import** LinearRegression
-your_model = LinearRegression**()**
+from sklearn.linear_model import LinearRegression
+your_model = LinearRegression()
 ```
 
 **Fit**
 
 ```python
-your_model.fit**(**x_training_data, y_training_data**)**
+your_model.fit(x_training_data, y_training_data)
 ```
 
 - `.coef_`: contains the coefficients
@@ -138,7 +138,7 @@ your_model.fit**(**x_training_data, y_training_data**)**
 **Predict**
 
 ```python
-predictions = your_model.predict**(**your_x_data**)**
+predictions = your_model.predict(your_x_data)
 ```
 
 - `.score()`: returns the coefficient of determination R²
@@ -150,14 +150,14 @@ predictions = your_model.predict**(**your_x_data**)**
 **Import and create the model**
 
 ```python
-**from** sklearn.naive_bayes **import** MultinomialNB
+from sklearn.naive_bayes import MultinomialNB
 your_model = MultinomialNB**()**
 ```
 
 **Fit**
 
 ```python
-your_model.fit**(**x_training_data, y_training_data**)**
+your_model.fit(x_training_data, y_training_data)
 ```
 
 **Predict**
@@ -178,14 +178,14 @@ probabilities = your_model.predict_proba(your_x_data)
 **Import and create the model**
 
 ```python
-**from** sklearn.neigbors **import** KNeighborsClassifier
-your_model = KNeighborsClassifier**()**
+from sklearn.neigbors import KNeighborsClassifier
+your_model = KNeighborsClassifier()
 ```
 
 **Fit**
 
 ```python
-your_model.fit**(**x_training_data, y_training_data**)**
+your_model.fit(x_training_data, y_training_data)
 ```
 
 **Predict**
@@ -206,8 +206,8 @@ probabilities = your_model.predict_proba(your_x_data)
 **Import and create the model**
 
 ```python
-**from** sklearn.cluster **import** KMeans
-your_model = KMeans**(**n_clusters=4, init='random'**)**
+from sklearn.cluster import KMeans
+your_model = KMeans(n_clusters=4, init='random')
 ```
 
 - `n_clusters`: number of clusters to form and number of centroids to generate
@@ -235,7 +235,7 @@ predictions = your_model.predict**(**your_x_data**)**
 ### **[Training Sets and Test Sets](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)**
 
 ```python
-**from** sklearn.model_selection **import** train_test_split
+from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split**(**x, y, train_size=0.8, test_size=0.2**)**
 ```
 
@@ -252,7 +252,7 @@ x_train, x_test, y_train, y_test = train_test_split**(**x, y, train_size=0.8, te
 **Import and print accuracy, recall, precision, and F1 score:**
 
 ```python
-**from** sklearn.metrics **import** accuracy_score, recall_score, precision_score, f1_score
+from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 print(accuracy_score(true_labels, guesses))
 
 print(recall_score(true_labels, guesses))
@@ -265,8 +265,8 @@ print(f1_score(true_labels, guesses))
 **Import and print the confusion matrix**
 
 ```python
-**from** sklearn.metrics **import** confusion_matrix
-print**(**confusion_matrix**(**true_labels, guesses**))**
+from sklearn.metrics import confusion_matrix
+print(confusion_matrix(true_labels, guesses))
 ```
 
 자세한 내용은 [해당](<[http://hleecaster.com/ml-accuracy-recall-precision-f1/](http://hleecaster.com/ml-accuracy-recall-precision-f1/)>) 포스팅을 참고
