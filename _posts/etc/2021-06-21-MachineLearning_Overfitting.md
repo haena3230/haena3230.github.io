@@ -1,5 +1,5 @@
 ---
-title: MachineLearning_Overfitting
+title: MachineLearning-Overfitting
 categories: [etc]
 comments: true
 ---
@@ -11,8 +11,6 @@ comments: true
 머신 러닝을 보면 결과적으로 입력 받은 데이타를 놓고, 데이타를 분류 (`Classification`) 하거나 또는 데이타에 인접한 그래프를 그리는 (`Regression`) , “선을 그리는 작업이다.”
 
 그러면 선을 얼마나 잘 그리느냐가 머신 러닝 모델의 정확도와 연관이 되는데, 다음과 같이 붉은 선의 샘플 데이타를 받아서, 파란선을 만들어내는 모델을 만들었다면 잘 만들어진 모델입니다.
-
-[![ReactNative_ImageViewer_ex](http://img.youtube.com/vi/1st__gNFSE4/0.jpg)](https://youtu.be/1st__gNFSE4)
 
 [![graph_1](https://t1.daumcdn.net/cfile/tistory/2614C650583E95AB2A)](https://t1.daumcdn.net/cfile/tistory/2614C650583E95AB2A)
 
