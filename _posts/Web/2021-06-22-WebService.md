@@ -81,7 +81,7 @@ XML은 정보를 구조적으로 조립할 수 있는 좋은 언어이기 때문
 웹서비스 프레임워크는 OXM을 사용하고, SOAP바인딩을 실현시켜줍니다. Java 기반의 JAX-WS(Java API for XML - WebService)와 .NET 기반의 WCF(Windows Communication Foundation)이 있습니다.
 
 프레임워크에서 웹 서비스의 WSDL의 생성과 SOAP 메시지의 바인딩 OXM등을 적용하여 웹서비스의 전반적인 과정을 처리해 줍니다.
-[![WebserviceStructure](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa671531-c8b4-405e-87d3-e756475ac0bd/Untitled.png)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa671531-c8b4-405e-87d3-e756475ac0bd/Untitled.png)
+[![WebserviceStructure](https://user-images.githubusercontent.com/57908055/122864053-de9ab700-d35e-11eb-97ec-dea3789814d3.png)](https://user-images.githubusercontent.com/57908055/122864053-de9ab700-d35e-11eb-97ec-dea3789814d3.png)
 
 [그림1. 웹서비스 구조 정리. 출처:[https://www.nextree.co.kr/p11842/](https://www.nextree.co.kr/p11842/)]
 
