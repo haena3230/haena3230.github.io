@@ -1,5 +1,5 @@
 ---
-title: UI/인터렉션/UI 차이점
+title: UI/인터렉션/UX 차이점
 categories: [etc]
 comments: true
 ---
