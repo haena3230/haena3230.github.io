@@ -31,7 +31,7 @@ image url은 prop을 사용하여 local의 source를 사용할 수 있지만, �
 
 ## 실행 영상
 
-[![ReactNative_ImageViewer_ex](http://img.youtube.com/vi/1st__gNFSE4/0.jpg)](https://youtu.be/1st__gNFSE4)
+[![ReactNative_ImageViewer_ex](https://youtu.be/DQA4309FCr4)](https://youtu.be/DQA4309FCr4)
 
 ## 참고
 
