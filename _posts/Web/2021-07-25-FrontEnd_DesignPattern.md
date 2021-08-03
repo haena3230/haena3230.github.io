@@ -1,6 +1,6 @@
 ---
 title: FrontEnd - Design Pattern
-categories: [etc]
+categories: [Web]
 comments: true
 ---
 
